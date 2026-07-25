@@ -47,3 +47,53 @@ a { color: var(--accent2); }
 .guide td, .guide th { border: 1px solid #23273a; padding: 0.45rem 0.6rem; text-align: left; }
 footer { padding: 1.4rem 5vw 2.5rem; border-top: 1px solid #23273a; }
 @media (max-width: 640px) { .founderwall { columns: 1; } h1 { font-size: 1.6rem; } }
+
+/* ---------- page tools (countdown, calculators, generators) ---------- */
+.tool {
+  background: var(--panel); border: 1px solid #23273a; border-radius: 14px;
+  padding: 1.1rem 1.2rem; margin: 1.5rem 0;
+}
+.tool h2 { margin-top: 0; }
+.toolrow { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin: .5rem 0; }
+.toolrow label { min-width: 11rem; color: var(--muted); font-size: .92rem; }
+.tool select, .tool input[type="number"] {
+  background: #0d0f14; color: var(--text); border: 1px solid #2b3048;
+  border-radius: 8px; padding: .45rem .6rem; font: inherit; min-width: 9rem;
+}
+.tool button, .crewpick {
+  background: var(--accent); color: #0d0f14; border: 0; border-radius: 999px;
+  padding: .45rem 1rem; font-weight: 700; cursor: pointer; font: inherit;
+  font-weight: 700;
+}
+.tool button:hover { filter: brightness(1.08); }
+.toolhint { color: var(--muted); font-size: .85rem; }
+.calcout {
+  display: block; margin-top: .8rem; padding: .7rem .9rem; border-radius: 10px;
+  border-left: 3px solid var(--muted); background: #0d0f14; font-weight: 600;
+}
+.calcout.ok { border-color: var(--ok); }
+.calcout.warn { border-color: #f0c674; }
+.calcout.bad { border-color: var(--accent); }
+#crewout { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+.crewpick {
+  background: #0d0f14; color: var(--text); border: 1px solid #2b3048;
+  display: inline-flex; gap: .5rem; align-items: baseline;
+}
+.crewpick:hover { border-color: var(--accent); }
+.crewpick .ct { color: var(--muted); font-size: .8rem; font-weight: 600; }
+.countdown-tool { text-align: center; }
+.countdown-tool .big { font-size: 4rem; line-height: 1; }
+.cd-unit { color: var(--muted); font-size: 1.1rem; }
+.crumbs, .updated { color: var(--muted); font-size: .85rem; }
+.joinbox {
+  background: var(--panel); border: 1px solid #23273a; border-left: 3px solid var(--accent2);
+  border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; margin: 2rem 0;
+}
+.joinbox h3 { margin-top: 0; }
+.guidelist { list-style: none; padding: 0; }
+.guidelist li { padding: .7rem 0; border-bottom: 1px solid #1d2130; }
+.guidelist .src { display: block; margin-top: .2rem; }
+.faq dt { font-weight: 700; margin-top: .9rem; }
+.faq dd { margin: .3rem 0 0; color: var(--muted); }
+.related { list-style: none; padding: 0; }
+.related li { padding: .35rem 0; }
